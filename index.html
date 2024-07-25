@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv = "X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale = 1.0">
+  <title>Damian's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/ffee87f767.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+        
+        <nav> 
+            <img src="Images/TerryLogo.png" class="logo" width="100%" height="100%"/>
+            <ul id = "sidemenu">
+                <!-- <li><a href="#header"><i class="fa-solid fa-house"></i> Home</a></li> -->
+                <li><a href="#about"><i class="fa-solid fa-address-card"></i> About</a></li>
+                <!-- <li><a href="#services"><i class="fa-solid fa-taxi"></i> Services</a></li> -->
+                <li><a href="#portfolio"><i class="fa-solid fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-address-book"></i> Contact</a></li>
+                <i class="fa-solid fa-x" onclick="closemenu()"></i>
+            </ul>
+
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+        </nav>
+
+        <div class="header-text">
+        
+            <p><em>Terry Scholar at the University of Texas at Dallas</em></p>
+            <h1>Welcome to my site</h1>
+
+        </div>
+
+    </div>
+  </div>
+
+<!---------about--------->   
+  <div id = "about"> 
+    <div class = "container">
+        <div class = "row">
+        
+            <div class = "about-col-1">
+            <img src="Images/Jumping.png" class="rotate"/>
+            </div>
+
+            <div class = "about-col-2">
+                <h1 class = "sub-title">About Me</h1>
+                <p>
+                    Hello, my name Damian Aguilar and I created this website to make 
+                    it easier to share what I have been doing with my time as a student 
+                    at UTD. I have thoroughly enjoyed my education here and hope to spread 
+                    the community spirit and hardworking attitude wherever I may go. 
+                    Thanks to my scholarship from the Terry Foundation and the generosity 
+                    of the Hobson Wildenthal honors college, I have been able 
+                    to experience things that never previously crossed my mind. 
+                    From symphonies to trips abroad I have truly been blessed and plan to  
+                    spread these oppurtunities to others who have never had the chance.
+                    So far college has shown me how vast the world really is. I've learned 
+                    so much about so many different  cultures and feel like I have been missing 
+                    out on so much of what life offers.  
+                    Throughout the rest of my college experience I want to truly understand 
+                    who I am and the what dreams I will tackle. Until then, I will live the 
+                    best life I can with the people I've met along the way.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class = "row">
+            <div class="tab-titles">
+                <p class="tab-links" onclick="opentab('Related Courses')">Courses</p>
+
+                <p class="tab-links" onclick="opentab('Technical Skills')">Skills</p>
+
+                <p class="tab-links" onclick="opentab('Certifications')">Certifications</p>
+            </div>
+
+            <div class="tab-contents" id = "Related Courses">
+                
+                <div class="fade">
+                    <ul>
+                        <li>Computer Architecture<br>Data Structures and algorithms<br>Prof. & Technical Communication<br>Innovation and Entrepreneurship</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tab-contents" id="Technical Skills">
+                
+                <div class="fade">
+                    <ul>
+                        <li>Engineering and Design Process <br> C.A.D <br> Machine Operation <br> Web Design</li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div class="tab-contents" id="Certifications">
+               
+               <div class="fade">
+                <ul>
+                    <li>OSHA 10 Hour Certification <br> Udemy Web Development (In progress)</li>
+                </ul>
+               </div>
+                
+            </div>
+
+        </div>
+    </div>
+  </div>
+
+<!--------services---->
+
+<!----*In Progress*
+<div id="services">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>decription of web design</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Marketing</h2>
+                <p>decription of Marketing</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-uncharted"></i>
+                <h2>Software Engineering</h2>
+                <p>decription of software engineering</p>
+                <a href="#">Learn more</a>
+            </div>
+
+
+        </div>
+
+    </div> 
+------------------------------------->
+
+    <!-------portfolio------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+            
+
+
+                <div class="work">
+                    <img src="Images/Fid4YouLogo.png">
+                    <div class="layer">
+                        <h3>Fid4You</h3>
+                        <p>A Mobile banking app that combines all Fidelity services into 1 easy to use app for young adults unsure of what the future holds.</p>
+                        <a href="https://www.figma.com/proto/Us0juFXMs2An1DToX6LVdV/Fidelity%3A-For-the-Youth?node-id=7-2&t=gOHHoEYjxmspUpsm-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=7%3A2" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="Images/FlyreLogo.png">
+                    <div class="layer">
+                        <h3>Flyre Folder</h3>
+                        <p>A new and improved flip folder design that combines both lyres and flip foders into 1 simple and effective product.</p>
+                        <a href="Images/FlyrePresentation.pdf" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        
+                    </div>
+                </div>
+
+
+<!------
+                <div class="work">
+                    <img src="Images/IMG-1225.jpg">
+                    <div class="layer">
+                        <h3>Reverse Engineering</h3>
+                        <p>Reverse Engineered a company's flashlight in order to increase consumer opinion.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            --->
+
+
+            </div>
+            <a href="/Projects.html" class = "btn">See more</a>
+
+        </div>
+    </div>
+<!--------contact------------->
+    <div id="contact">
+        <div class="container"> 
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class = "sub-title">Contact Me</h1>
+                    <p><i class="fa-brands fa-google"></i> damian.aguilar.work@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> (903)-249-3337</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/sleepyd2004/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/damian.aguilar.1806/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/damianaguilar2004/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Images/OfficialResume.docx" download class="btn btn2">Download Resume</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Damian Aguilar. Made with VSCode <i class="fa-solid fa-face-grin-beam"></i></p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+              tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+    
+        }
+    </script>
+  
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxk_FPdm5ooPnYw0gAkRmSlFpJiGMIDWRaB4Vd28xT4RMHggmAuiPeXkzW8J1m3WvjYdQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+  
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Thank you for contacting!"
+                setTimeout(function(){
+                msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
