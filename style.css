@@ -38,13 +38,10 @@ html{
 .btn.btn2{
     display: inline-block;
     background-color: #00244d;
-
 }
 
 .btn:hover{
     background: #00244d;
-
-
 }
 
 nav{
@@ -57,26 +54,11 @@ nav{
 .logo{
     width: 100px;
 }
-.rotate {
-    animation: rotation 2s infinite linear;
-  }
 
-@keyframes rotation {
-    from{transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(359deg);
-    }
-}
 
 .fade {
     font-size: 20px;
     animation: fadeIn 1s;
-}
-@keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-    
 }
 
 
@@ -89,10 +71,16 @@ nav ul li{
 
 }
 nav ul li a{
+
+    display: inline-block; /* Ensures proper sizing */
+    padding: 10px 20px; /* Adjust for oval shape */
+    border: 2px solid white; /* Border color */
+    border-radius: 50px; /* High value makes it oval */
     color: #fff;
     text-decoration: none;
     font-size: 18px;
     position: relative;
+    transition: transform 0.3s ease, padding 0.3s ease; /* Smooth hover effect */
 }
 
 nav ul li a::after{
@@ -101,13 +89,19 @@ nav ul li a::after{
     height: 3px;
     background: #00244d;
     position: absolute;
-    left: 0;
-    bottom: -2px;
-    transition: 0.5s;
+    left: 50%;
+    bottom: 5px; /* Adjusted to be closer to text */
+    transform: translateX(-50%); /* Centers the line */
+    transition: width 0.5s ease;
+}
+/* Increase oval size on hover */
+nav ul li a:hover {
+    transform: scale(1.1);
+    padding: 12px 24px; /* Slightly increases padding */
 }
 
 nav ul li a:hover::after{
-    width: 100%;
+    width: 50%;
 }
 
 .header-text{
@@ -135,6 +129,23 @@ nav ul li a:hover::after{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+.rotate {
+    animation: rotation 2s infinite linear;
+  }
+
+@keyframes rotation {
+    from{transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    
+}
 .about-col-1{
     flex: 50%;
 }
@@ -151,7 +162,7 @@ nav ul li a:hover::after{
     padding: 40px 0px;
 }
 .about-col-2 p{
-    font-size: 100%;
+    font-size: 20px;
 }
 
 
